@@ -57,11 +57,6 @@ class CalculatorTest {
         assertEquals(12, calc.multiply(3, 4), "3 * 4 should be 12");
     }
 
-    @Test
-    @DisplayName("Intentionally wrong test")
-    void testWrongSubtract() {
-        assertEquals(100, calc.subtract(5, 3), "5 - 3 should be 100 (wrong on purpose)");
-    }
 
     @Test
     @DisplayName("Test for function getNextPrime with 5")
