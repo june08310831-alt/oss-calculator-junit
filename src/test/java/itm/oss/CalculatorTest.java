@@ -45,5 +45,29 @@ class CalculatorTest {
         assertFalse(calc.isPrime(-4), "There are not negative primer numbers.");
         assertFalse(calc.isPrime(-5), "There are not negative primer numbers.");
     }
+    @Test
+    @DisplayName("Test for function subtract")
+    void testSubtract() {
+        assertEquals(2, calc.subtract(5, 3), "5 - 3 should be 2");
+    }
+
+    @Test
+    @DisplayName("Test for function multiply")
+    void testMultiply() {
+        assertEquals(12, calc.multiply(3, 4), "3 * 4 should be 12");
+    }
+
+    @Test
+    @DisplayName("Intentionally wrong test")
+    void testWrongSubtract() {
+        assertEquals(100, calc.subtract(5, 3), "5 - 3 should be 100 (wrong on purpose)");
+    }
+
+    @Test
+    @DisplayName("Test for function getNextPrime with 5")
+    void testNextPrimeAfterFive() {
+        assertEquals(7, calc.getNextPrime(5), "Next prime after 5 should be 7");
+    }
+
 
 }
